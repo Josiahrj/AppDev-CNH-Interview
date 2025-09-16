@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 CORS(app)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://myuser:mypassword@hostname:5432/mydb"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://cnh_interview_postgresql_user:7K66Q2Y3W5MoeGaeOYsjoCHRd0urroQ3@dpg-d34v4d0dl3ps73883ht0-a/cnh_interview_postgresql"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
