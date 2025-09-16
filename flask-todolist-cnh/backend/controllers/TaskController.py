@@ -4,12 +4,12 @@ from orchestrators.TaskOrchestrator import TaskOrchestrator
 task_blueprint = Blueprint("task_blueprint", __name__)
 taskOrchestrator = TaskOrchestrator()
 
-@task_blueprint("/", methods=["GET"])
+@task_blueprint.route("/", methods=["GET"])
 def get_tasks():
     tasks = taskOrchestrator.get_all_tasks()
     return jsonify([t.todict() for t in tasks])
 
-@task_blueprint("/add_task", methods=["POST"])
+@task_blueprint.route("/add_task", methods=["POST"])
 def create_task():
     data = request.get_json()
 
