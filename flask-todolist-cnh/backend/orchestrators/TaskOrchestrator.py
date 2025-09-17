@@ -9,3 +9,6 @@ class TaskOrchestrator:
 
     def create_task(self, description, completed=False):
         return self.repo.add_task(description, completed)
+    
+    def delete_task(self, taskId):
+        return self.repo.delete_task(taskId)
