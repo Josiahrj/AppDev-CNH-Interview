@@ -8,7 +8,7 @@ CORS(
     app,
     resources={r"/*": {"origins": "*"}},
     supports_credentials=True,
-    methods=["GET", "POST", "DELETE", "OPTIONS"],
+    methods=["GET", "POST", "DELETE", "OPTIONS", "PATCH"],
     allow_headers=["Content-Type"]
 )
 
