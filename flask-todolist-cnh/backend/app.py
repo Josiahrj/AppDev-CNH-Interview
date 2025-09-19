@@ -12,7 +12,7 @@ CORS(
     allow_headers=["Content-Type"]
 )
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://cnh_interview_user@localhost:5432/cnh_interview"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://cnh_interview_user:password123@localhost:5432/cnh_interview"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # db = SQLAlchemy(app)
